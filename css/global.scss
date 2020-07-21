@@ -1,0 +1,62 @@
+html, body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin: 0.3rem 0 0;
+
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+h2 {
+  color: $secondary-active;
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin: 0 0 0.3rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+button.primary-btn {
+  background: $cta;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  
+  @media (min-width: 768px) {
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+  }
+}
+
+a, button {
+  transition: all .3s;
+}
+
+.overlay {
+  background: rgba($element-background, .7);
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  position: fixed;
+  -webkit-tap-highlight-color: transparent;
+  top: 0;
+  width: 100%;
+  will-change: opacity;
+  z-index: 3;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

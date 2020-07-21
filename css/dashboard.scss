@@ -1,0 +1,195 @@
+@import 'colors';
+@import 'global';
+@import 'reset';
+@import 'nav';
+
+body {
+  color: $text;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+main {
+  background: $global-background;
+  @media (min-width: 768px) {
+    flex: 1
+  }
+}
+
+footer {
+  background: $element-background;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+
+  @media (min-width: 768px) {
+    flex: 1 100%;
+  }
+}
+
+.header__top {
+  background: $primary;
+  display: none;
+  justify-content: space-between;
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    display: flex;
+    padding: 1.3rem 1rem;
+  }
+
+  div[class^="btn-"] {
+    cursor: pointer;
+  }
+
+  .btn-collapse {
+    color: $cta;
+    padding: 0 1rem 0 0.5rem;
+    transition: all .3s;
+
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.dashboard-body {
+  margin-top: 4rem;
+  padding: 1.5rem 0.6rem;
+
+  h1, h2 {
+    padding: 0 0 1rem;
+
+    @media (min-width: 768px) {
+      padding: 0 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    padding: 1.5rem;
+  }
+}
+
+#notification-templates {
+  background: $global-background;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.ctn-options {
+  background: $primary;
+  border-top: 1px $border solid;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  left: 0;
+  padding: 0.7rem 1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  @media (min-width: 768px) {
+    background: transparent;
+    border-top: none;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem 0.7rem 1.5rem;
+    position: relative;
+  }
+}
+
+.ctn-options__button {
+  color: $text;
+  border-radius: 0.3rem;
+  background: $border;
+  padding: 0.5rem;
+
+  @media (min-width: 768px)  {
+    padding: 0.5rem 1rem
+  }
+
+  &:hover {
+    background: $element-background;
+  }
+}
+
+.ctn-options__button.primary-btn {
+  margin-left: 0.6rem;
+
+  &:hover {
+    background: rgba($cta, 0.7);
+  }
+}
+
+.search-bar {
+  background: $primary;
+  border: 1px $border solid;
+  position: absolute;
+  padding: 0.3rem 0 0.3rem 0.3rem;
+  left: 1rem;
+
+  @media (min-width: 768px) {
+    border-radius: 0.2rem;
+    left: 1.5rem;
+    padding: 0.4rem;
+    width: 15rem;
+  }
+
+  &.active, &.focus {
+    width: calc(100% - 38px);
+
+    .search-bar__field {
+      width: 100%;
+    }
+  }
+
+  form {
+    align-items: center;
+    display: flex;
+  }
+
+  i.fas {
+    color: $border;
+    font-size: 1.4rem;
+    margin-right: 0.4rem;
+
+    @media (min-width: 768px) {
+      font-size: 1rem;
+      color: $text;
+    }
+  }
+
+  .search-bar__field {
+    background: transparent;
+    border: 0;
+    color: $text;
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding: 0;
+    width: 0;
+    transition: all 0.5s;
+
+    @media (min-width: 768px) {
+      font-size: 0.8rem;
+      width: 100%;
+    }
+  }
+}
+
+.templates-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+
+  @media (min-width: 768px) {
+    padding: 0 1.5rem;
+  }
+}
+
+.change-view-mode {
+  cursor: pointer;
+}
+
