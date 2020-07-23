@@ -20,7 +20,7 @@ main {
 }
 
 footer {
-  background: $element-background;
+  background: $secondary;
   font-size: 0.7rem;
   padding: 0.5rem 1rem;
 
@@ -37,7 +37,7 @@ footer {
 
   @media (min-width: 768px) {
     display: flex;
-    padding: 1.3rem 1rem;
+    padding: 1.4rem 1rem;
   }
 
   div[class^="btn-"] {
@@ -45,7 +45,7 @@ footer {
   }
 
   .btn-collapse {
-    color: $cta;
+    color: $secondary-text;
     padding: 0 1rem 0 0.5rem;
     transition: all .3s;
 
@@ -61,10 +61,6 @@ footer {
 
   h1, h2 {
     padding: 0 0 1rem;
-
-    @media (min-width: 768px) {
-      padding: 0 1.5rem;
-    }
   }
 
   @media (min-width: 768px) {
@@ -120,7 +116,7 @@ footer {
   margin-left: 0.6rem;
 
   &:hover {
-    background: rgba($cta, 0.7);
+    background: rgba($secondary, 0.7);
   }
 }
 
@@ -191,5 +187,6 @@ footer {
 
 .change-view-mode {
   cursor: pointer;
+  color: $secondary-text;
 }
 

@@ -1,11 +1,11 @@
 @charset "UTF-8";
 html, body {
   font-family: "Raleway", sans-serif;
+  font-size: 14px;
 }
 
 h1 {
   font-size: 1.3rem;
-  font-weight: normal;
   margin: 0.3rem 0 0;
 }
 @media (min-width: 768px) {
@@ -31,16 +31,11 @@ button {
 }
 
 button.primary-btn {
-  background: #4294f4;
+  background: #f2c872;
   font-weight: bold;
   text-align: center;
-  text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  button.primary-btn {
-    font-size: 0.7rem;
-    letter-spacing: 0.5px;
-  }
+  padding: 1rem 2rem;
+  border-radius: 2rem;
 }
 
 a, button {
@@ -98,7 +93,7 @@ button {
   }
 }
 .sidebar a {
-  color: #FFF;
+  color: #333;
   text-decoration: none;
 }
 @media (min-width: 768px) {
@@ -135,6 +130,9 @@ button {
 .sidebar .logo {
   background: #6650a0;
   text-align: center;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 2rem;
+  color: #FFF;
 }
 @media (min-width: 768px) {
   .sidebar .logo {
@@ -186,9 +184,8 @@ button {
 }
 .hamburger .hamburger__logo {
   order: 2;
-}
-.hamburger .hamburger__logo span {
-  max-height: 1.6rem;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 2rem;
   color: #FFF;
 }
 .hamburger .hamburger__view-mode {
@@ -266,7 +263,7 @@ main {
 }
 
 footer {
-  background: #333;
+  background: #f2c872;
   font-size: 0.7rem;
   padding: 0.5rem 1rem;
 }
@@ -285,14 +282,14 @@ footer {
 @media (min-width: 768px) {
   .header__top {
     display: flex;
-    padding: 1.3rem 1rem;
+    padding: 1.4rem 1rem;
   }
 }
 .header__top div[class^=btn-] {
   cursor: pointer;
 }
 .header__top .btn-collapse {
-  color: #4294f4;
+  color: #FFF;
   padding: 0 1rem 0 0.5rem;
   transition: all 0.3s;
 }
@@ -306,11 +303,6 @@ footer {
 }
 .dashboard-body h1, .dashboard-body h2 {
   padding: 0 0 1rem;
-}
-@media (min-width: 768px) {
-  .dashboard-body h1, .dashboard-body h2 {
-    padding: 0 1.5rem;
-  }
 }
 @media (min-width: 768px) {
   .dashboard-body {
@@ -367,7 +359,7 @@ footer {
   margin-left: 0.6rem;
 }
 .ctn-options__button.primary-btn:hover {
-  background: rgba(66, 148, 244, 0.7);
+  background: rgba(242, 200, 114, 0.7);
 }
 
 .search-bar {
@@ -436,6 +428,7 @@ footer {
 
 .change-view-mode {
   cursor: pointer;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=main.css.map */
