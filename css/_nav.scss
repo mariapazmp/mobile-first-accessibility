@@ -13,17 +13,22 @@
   @media (min-width: 768px) {
     background: $primary;
     display: block;
-    flex: 0 0 14rem;
+    flex: 0 0 18rem;
     left: 0;
     position: relative;
   }
 
   a {
-    color: $text;
+    color: $secondary-text;
     text-decoration: none;
+    font-size: 1.5rem;
 
     @media (min-width: 768px) {
-      font-size: 0.9rem;
+      font-size: 1.4rem;
+    }
+
+    &:focus {
+      outline: solid $secondary;
     }
   }
 
@@ -55,7 +60,7 @@
 
   .m-level-2 a {
     &:active, &:hover, &:focus {
-      color: $text-active;
+      color: $secondary-text;
       font-weight: bold;
     }
   }
@@ -185,6 +190,15 @@
   &.nav-menu__item--opened::after {
     display: block;
     transform: rotate(180deg)
+  }
+}
+
+.skip-link {
+  height: 0;
+  display: none;
+
+  &:focus {
+    height: auto;
   }
 }
 

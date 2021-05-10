@@ -1,10 +1,60 @@
+html, body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
 h1 {
   font-size: 1.3rem;
-  font-weight: normal;
-  margin: 0.3rem; }
+  margin: 0.3rem 0 0;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
 
 h2 {
-  color: #828282;
+  color: #6650a0;
   font-size: 1.1rem;
   font-weight: normal;
-  margin: 0.3rem; }
+  margin: 0 0 0.3rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+button.primary-btn {
+  background: #f2c872;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+a, button {
+  transition: all 0.3s;
+}
+
+.overlay {
+  background: rgba(51, 51, 51, 0.7);
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  position: fixed;
+  -webkit-tap-highlight-color: transparent;
+  top: 0;
+  width: 100%;
+  will-change: opacity;
+  z-index: 3;
+  display: none;
+}
+.overlay.active {
+  display: block;
+}
+
+/*# sourceMappingURL=global.css.map */

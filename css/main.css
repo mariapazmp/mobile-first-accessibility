@@ -4,8 +4,18 @@ html, body {
   font-size: 14px;
 }
 
-h1 {
+p {
   font-size: 1.3rem;
+  line-height: 2rem;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+h1 {
+  font-size: 1.7rem;
   margin: 0.3rem 0 0;
 }
 @media (min-width: 768px) {
@@ -15,8 +25,8 @@ h1 {
 }
 
 h2 {
-  color: red;
-  font-size: 1.1rem;
+  color: #6650a0;
+  font-size: 1.5rem;
   font-weight: normal;
   margin: 0 0 0.3rem;
 }
@@ -32,10 +42,15 @@ button {
 
 button.primary-btn {
   background: #f2c872;
-  font-weight: bold;
   text-align: center;
   padding: 1rem 2rem;
   border-radius: 2rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  button.primary-btn {
+    width: auto;
+  }
 }
 
 a, button {
@@ -87,19 +102,23 @@ button {
   .sidebar {
     background: #6650a0;
     display: block;
-    flex: 0 0 14rem;
+    flex: 0 0 18rem;
     left: 0;
     position: relative;
   }
 }
 .sidebar a {
-  color: #333;
+  color: #FFF;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 @media (min-width: 768px) {
   .sidebar a {
-    font-size: 0.9rem;
+    font-size: 1.4rem;
   }
+}
+.sidebar a:focus {
+  outline: solid #f2c872;
 }
 .sidebar .fas {
   color: #f2c872;
@@ -124,7 +143,7 @@ button {
   }
 }
 .sidebar .m-level-2 a:active, .sidebar .m-level-2 a:hover, .sidebar .m-level-2 a:focus {
-  color: #6650a0;
+  color: #FFF;
   font-weight: bold;
 }
 .sidebar .logo {
@@ -241,6 +260,14 @@ button {
 .nav-menu__item.m-parent.nav-menu__item--opened::after {
   display: block;
   transform: rotate(180deg);
+}
+
+.skip-link {
+  height: 0;
+  display: none;
+}
+.skip-link:focus {
+  height: auto;
 }
 
 body {
